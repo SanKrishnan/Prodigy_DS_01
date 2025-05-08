@@ -1,14 +1,17 @@
-✅ Task 1: Visualize Total Population Distribution (2023)
-📌 Task Description
-Create a bar chart or histogram to visualize the distribution of a categorical or continuous variable, such as total population across countries.
 
-🔗 Dataset Used
-World Bank Indicator: SP.POP.TOTL
+# ✅ Task 1: Visualize Total Population Distribution (2023)
 
-🐍 Sample Code
-python
-Copy
-Edit
+## 📌 Task Description
+
+Create a bar chart or histogram to visualize the distribution of a **categorical** or **continuous** variable, such as total population across countries.
+
+## 🔗 Dataset Used
+
+* **World Bank Indicator**: [`SP.POP.TOTL`](https://data.worldbank.org/indicator/SP.POP.TOTL)
+
+## 🐍 Sample Code
+
+```python
 import pandas as pd
 import requests
 import matplotlib.pyplot as plt
@@ -38,39 +41,41 @@ def plot_population_distribution(df, top_n=10):
     plt.tight_layout()
     plt.grid(axis='y', linestyle='--', alpha=0.5)
     plt.show()
-🌍 World Population Age Group Analysis
-This Python project visualizes population data across different age groups and total population statistics using the World Bank API. It includes top/bottom comparisons and year-on-year demographic insights.
+```
 
-📊 Features
-Fetches and analyzes population data by age group:
+---
 
-0-14 years
+# 🌍 World Population Age Group Analysis
 
-15-64 years
+This Python project visualizes population data across different age groups and total population statistics using the **World Bank API**. It includes top/bottom comparisons and year-on-year demographic insights.
 
-65+ years
+---
 
-For each age group:
+## 📊 Features
 
-Visualizes Top 5 countries by percentage (2023)
+* Fetches and analyzes population data by age group:
 
-Visualizes Bottom 5 countries by count (2023)
+  * **0-14 years**
+  * **15-64 years**
+  * **65+ years**
+* For each age group:
 
-Compares 2022 vs 2023 for Top 5 countries (percentage)
+  * Visualizes **Top 5 countries** by **percentage** (2023)
+  * Visualizes **Bottom 5 countries** by **count** (2023)
+  * Compares **2022 vs 2023** for Top 5 countries (percentage)
+* **Includes Task 1**: Total population distribution chart
 
-Includes Task 1: Total population distribution chart
+---
 
-📦 Requirements
-Python 3.x
+## 📦 Requirements
 
-pandas
+* Python 3.x
+* pandas
+* requests
+* matplotlib
 
-requests
+### ✅ Install Dependencies
 
-matplotlib
-
-✅ Install Dependencies
-bash
-Copy
-Edit
+```bash
 pip install pandas requests matplotlib
+```
